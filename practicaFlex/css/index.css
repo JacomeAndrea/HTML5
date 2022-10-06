@@ -55,7 +55,7 @@
     font-weight: bold;
 }
 /*___________________*/
-.menu-lateral {
+.menu-lateral { /*intentar que el texto no slate de línea*/
     float: left;
     position: -webkit-sticky;
     position: sticky;
@@ -98,6 +98,7 @@ main {
     flex-direction: column;
 }
 
+
 .description1>img {
     padding: 2rem;
     width: 50rem;
@@ -106,11 +107,10 @@ main {
 }
 
 /*Collage fotografías*/
-.conjunto-imagenes {
+.conjunto-imagenes { /*centar imagemes*/
     display: flex;
     flex-direction: row;
     text-align: center;
-    padding-left: 1.5rem;
 }
 
 .foto>img {
@@ -139,4 +139,10 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+article {
+    padding: 3rem;
+    text-align: justify;
+    line-height: 1.5rem;
 }
