@@ -5,52 +5,80 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
-    <link rel="stylesheet" href="">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="./css/index.css">
     <!--CSS-->
     <link rel="icon" href="./img/favicon-16x16.png">
     <!--favicon*/-->
+    <!--METER FIGURE EN LAS IMAGENES-->
+    <!--
+                        <article class="figure"> &lt;!&ndash;"figure" para todas las fotos menos favicon y el icon del título&ndash;&gt;
+
+    -->
 </head>
 <body>
 <header class="contenedor-header">
-    <div class="logo">
-        <img src="" alt=""> <!--imagen junto al título-->
+    <div class="logo-menu">
+        <img src="./img/logo.png" alt="logotipo" width="40rem" height="40rem"> <!--imagen junto al título-->
+        <nav> <!--dentro del header, fuera del main o en el footer*/-->
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Página 1</li>
+                    <li>Página 2</li>
+                    <li>Página 3</li>
+                </ul>
+            </div>
+        </nav>
+        <a href="#" class="button">Login</a>
     </div>
-    <div class="titulo">
-        <h1 class="titulo"></h1>
-    </div>
-    <nav> <!--dentro del header, fuera del main o en el footer*/-->
-        <div class="menu">
 
-        </div>
-    </nav>
 </header>
+<div class="centrar-menu-main-aside">
+    <div class="menu-lateral">
+        <ul>
+            <li>Home</li>
+            <li>Página 1</li>
+            <li>Página 2</li>
+            <li>Página 3</li>
+        </ul>
+    </div>
+    <main>
 
-<main>
-    <div class="element1">
         <article class="description1">
+            <img src="img/horizontal.jpg" alt="modelo-pantalones">
+        </article>
 
-        </article>
-        <article class="description2">
+        <div class="conjunto-imagenes">
+            <div class="foto">
+                <img src="img/woman-3146093_1920.jpg" alt="modelo-verde">
+            </div>
+            <div class="foto">
+                <img src="img/pink-hair-1450045_1920.jpg" alt="modelo-rosa">
+            </div>
+            <div class="foto">
+                <img src="img/sunglasses-2705642_1920.jpg" alt="modelo-azul">
+            </div>
+        </div>
 
-        </article>
-        <article class="figure"> <!--"figure" para todas las fotos menos favicon y el icon del título-->
-            <figure class="figure1">
-                <img src="" alt="">
-                <figcaption></figcaption>
-            </figure>
-        </article>
-    </div>
-    <div class="element2">
-        <article></article>
-    </div>
-    <div class="...">
-        <article></article>
-    </div>
-</main>
-<aside></aside>
+        <div class="description-foto">
+            <article>as</article>
+        </div>
+
+
+    </main>
+    <aside class="aside">
+        <img src="img/aside3.png" alt="anuncio 3">
+        <img src="img/aside1.png" alt="anuncio 1">
+        <img src="img/aside2.png" alt="anuncio 2">
+
+    </aside>
+</div>
+
 <footer>
-    <div class="footer"></div>
+    <div class="footer">
+        <<img src="img/footer.png" alt="anuncion del footer">
+    </div>
 </footer>
 
 

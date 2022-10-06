@@ -1,0 +1,142 @@
+/*HEADER*/
+.contenedor-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+    flex-wrap: wrap; /*¿funciona?*/
+}
+
+.logo-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+    margin: auto;
+}
+
+.logo-menu>img {
+    border: solid white;
+    width: 4rem;
+    height: 4rem;
+}
+
+.menu>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    color: white;
+    list-style: none;
+}
+
+.menu>ul>li {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.menu>ul>li:hover {
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: white;
+    border: 0.1rem solid gray;
+    color: black;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.1rem 0.3rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/*___________________*/
+.menu-lateral {
+    float: left;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; /*No he usado el flexbox adrede para que baje el menú según vas bajando por la página web*/
+    background-color: hsla(0, 0%, 50%, 0.33);
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: 0.1rem solid;
+    height: 50%;
+}
+.menu-lateral>ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    padding: 2rem;
+}
+
+.menu-lateral>ul>li {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-lateral>ul>li:hover {
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+}
+
+.centrar-menu-main-aside {
+    display: flex;
+    flex-direction: row;
+}
+
+/*MAIN*/
+
+main {
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+}
+
+.description1>img {
+    padding: 2rem;
+    width: 50rem;
+    height: 30rem;
+    border-radius: 2rem;
+}
+
+/*Collage fotografías*/
+.conjunto-imagenes {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-left: 1.5rem;
+}
+
+.foto>img {
+    padding: 1rem;
+    width: 15rem;
+    height: 10rem;
+}
+
+/*ASIDE*/
+/*aside {
+    display: flex;
+    flex-direction: column;
+}*/
+
+.aside {
+    margin-top: 2rem;
+    text-align: center;
+    border: 0.1rem solid;
+    margin-bottom: 2rem;
+}
+.aside>img {
+    padding: 1rem;
+}
+
+.description-foto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
