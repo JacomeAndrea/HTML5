@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 /*HEADER*/
 .contenedor-header {
     display: flex;
@@ -71,6 +74,7 @@
     margin: 0;
     text-align: center;
     padding: 2rem;
+    width: 10rem;
 }
 
 .menu-lateral>ul>li {
@@ -100,7 +104,7 @@ main {
 
 
 .description1>img {
-    padding: 2rem;
+    padding: 1rem;
     width: 50rem;
     height: 30rem;
     border-radius: 2rem;
@@ -111,10 +115,11 @@ main {
     display: flex;
     flex-direction: row;
     text-align: center;
+    padding-left: 4rem;
 }
 
 .foto>img {
-    padding: 1rem;
+    padding-left: 3rem;
     width: 15rem;
     height: 10rem;
 }
@@ -127,6 +132,7 @@ main {
 
 .aside {
     margin-top: 2rem;
+    margin-right: 4rem;
     text-align: center;
     border: 0.1rem solid;
     margin-bottom: 2rem;
@@ -145,4 +151,48 @@ article {
     padding: 3rem;
     text-align: justify;
     line-height: 1.5rem;
+}
+
+
+.email {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+}
+
+.copyright {
+    padding-left: 5rem;
+}
+
+.redes-sociales {
+    padding-left: 10rem;
+}
+
+
+.copyright {
+    text-align: center;
+}
+
+.footer-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5rem;
+    background-color: #000000;
+}
+
+.email>img, .instagram>img, .facebook>img {
+    width: 2rem;
+    padding: 0.5rem;
+    vertical-align: middle;
+    background-color: white;
+    margin: 1rem;
+}
+
+.email>a {
+    padding-top: 2rem;
+}
+
+.instagram>a, .facebook>a, .copyright, .email>a {
+    color: white;
 }
