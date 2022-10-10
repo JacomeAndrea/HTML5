@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: FjallaOne-Regular, "DejaVu Sans";
 }
 /*HEADER*/
 .contenedor-header {
@@ -74,7 +75,7 @@
     margin: 0;
     text-align: center;
     padding: 2rem;
-    width: 10rem;
+    width: 15rem;
 }
 
 .menu-lateral>ul>li {
@@ -102,6 +103,10 @@ main {
     flex-direction: column;
 }
 
+main>article, .description-foto>article {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .description1>img {
     padding: 1rem;
