@@ -123,7 +123,7 @@ a:hover, .home:hover {
     margin: 3rem;
 }
 
-.description>article{
+article{
     line-height : 2;
     text-align: justify;
 }
@@ -146,10 +146,19 @@ a:hover, .home:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    align-items: baseline;
     grid-column-gap: 3vw;
     padding: 3vw;
-    background-color: hsl(0, 0%, 0%);
+
 }
+
+.menu2 {
+    background-color: hsl(0, 0%, 0%);
+    margin-right: 10vw;
+    margin-left: 10vw;
+    border-radius: 5rem;
+}
+
 
 p {
     color: white;
@@ -157,8 +166,42 @@ p {
 
 .columna>img {
     width: 5rem;
-    height: 5rem;
+    height: auto;
     color: white;
+}
+
+.reflexiones {
+    padding: 2rem;
+    margin: 8rem 3rem 3rem;
+}
+
+.reflexiones>h1 {
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.reflexiones>article {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.frase {
+    border: solid 0.5rem hsl(0, 2%, 62%);
+    -moz-border-radius: 0 50% / 0 100%;
+    -webkit-border-radius: 0 50% / 0 100%;
+    border-radius: 0 50% / 0 100%;
+    background: #b7b7b7;
+}
+.frase>article {
+    font-size: x-large;
+    text-align: center;
+    margin-right: 5vw;
+}
+
+.frase>p {
+    text-align: right;
+    color: black;
+    padding-right: 5vw;
 }
 
 
