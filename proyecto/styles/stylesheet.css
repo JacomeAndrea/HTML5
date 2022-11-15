@@ -66,18 +66,36 @@ body {
     justify-content: center;
 }
 
+.logo-y-titulo h1{ /*título*/
+    font-size: 5vw;
+}
+
 
 nav {
     display: flex;
     background-color: hsl(0, 0%, 72%);
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     justify-content: center;
 }
 
+
+
+nav a {
+    border-right: black solid 0.1vw;
+    font-size: 2.5vw; /*REUTILIZADO: se aplica a todos menos al desktop*/
+    padding-right: 1vw;  /*REUTILIZADO: se aplica a todos menos al desktop*/
+    padding-left: 1vw;  /*REUTILIZADO: se aplica a todos menos al desktop*/
+}
+
+a:hover, .home:hover {
+    background-color: white;
+    border-radius: 1vw;
+}
+
 #home {
-    width: 1rem;
-    height: 1rem;
+    width: 2vw;
+    height: 2vw;
     padding-left: 4vw;
     padding-right: 0.5vw;
 }
@@ -88,9 +106,17 @@ nav {
     align-items: center
 }
 
+.home>a {
+    padding-left: 0;
+}
+
+#logo {
+    width: 20vw;
+}
 
 
-@media (min-width: 960px) and (max-width: 1328px) {
+
+@media screen and (min-width: 960px) {
 
     /*ENCABEZADO: titulo + menú*/
     .fondo-header {
@@ -98,25 +124,12 @@ nav {
     }
 
     nav a {
-        padding-right: 4vw;
-        padding-left: 4vw;
-        border-right: black solid 0.1rem;
+        font-size: 2vw;
+        padding-right: 3vw;
+        padding-left: 3vw;
     }
 
-    .home>a {
-        padding-left: 0;
-    }
-
-    a:hover, .home:hover {
-        background-color: white;
-        border-radius: 1rem;
-    }
-
-    #logo {
-        width: 10rem;
-        height: 10rem;
-    }
-
+    /*FOTOGRAFÍA*/
 
 
 }
@@ -124,27 +137,14 @@ nav {
 /*TABLET*/
 @media (min-width: 480px) and (max-width: 960px) {
     /*ENCABEZADO: titulo + menú*/
-    .fondo-header {
-        padding: 0.3rem;
-    }
-
-    .logo-y-titulo h1{ /*título*/
-        font-size: 4vw;
-    }
-
-    #logo { /*no funciona el responsive, peor me vale así*/
-        width: 7rem;
-    }
-
-    nav > a, a.home {
-        font-size: 1rem;
-    }
-
 
 
 }
 
 @media (min-width: 0) and (max-width: 480px) {
+
+
+
 }
 /*
 
