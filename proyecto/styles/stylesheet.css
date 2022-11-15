@@ -59,26 +59,13 @@ body {
 .fondo-header {
     background-color: hsl(0, 0%, 85%);
     margin: 0;
-    padding: 0.5rem;
 }
-
 .logo-y-titulo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#logo {
-    width: 10rem;
-    height: 10rem;
-}
-
-#home {
-    width: 1rem;
-    height: 1rem;
-    padding-left: 4vw;
-    padding-right: 0.5vw;
-}
 
 nav {
     display: flex;
@@ -88,26 +75,83 @@ nav {
     justify-content: center;
 }
 
+#home {
+    width: 1rem;
+    height: 1rem;
+    padding-left: 4vw;
+    padding-right: 0.5vw;
+}
+
 .home {
     display: flex;
     border-left: black solid 0.1rem;
     align-items: center
 }
 
-nav a { /*todos los hijos de nav*/
-    padding-right: 4vw;
-    padding-left: 4vw;
-    border-right: black solid 0.1rem;
+
+
+@media (min-width: 960px) and (max-width: 1328px) {
+
+    /*ENCABEZADO: titulo + menú*/
+    .fondo-header {
+        padding: 0.5rem;
+    }
+
+    nav a {
+        padding-right: 4vw;
+        padding-left: 4vw;
+        border-right: black solid 0.1rem;
+    }
+
+    .home>a {
+        padding-left: 0;
+    }
+
+    a:hover, .home:hover {
+        background-color: white;
+        border-radius: 1rem;
+    }
+
+    #logo {
+        width: 10rem;
+        height: 10rem;
+    }
+
+
+
 }
 
-.home>a {
-    padding-left: 0;
+/*TABLET*/
+@media (min-width: 480px) and (max-width: 960px) {
+    /*ENCABEZADO: titulo + menú*/
+    .fondo-header {
+        padding: 0.3rem;
+    }
+
+    .logo-y-titulo h1{ /*título*/
+        font-size: 4vw;
+    }
+
+    #logo { /*no funciona el responsive, peor me vale así*/
+        width: 7rem;
+    }
+
+    nav > a, a.home {
+        font-size: 1rem;
+    }
+
+
+
 }
 
-a:hover, .home:hover {
-    background-color: white;
-    border-radius: 1rem;
+@media (min-width: 0) and (max-width: 480px) {
 }
+/*
+
+
+
+
+
 
 .foto-presentacion {
     max-width: 100%;
