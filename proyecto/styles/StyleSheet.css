@@ -1,6 +1,5 @@
 
 /*FUENTES: light, regular and bold*/
-
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
@@ -51,106 +50,310 @@
     src: url(../fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/*TODA LA PÁGINA WEB*/
+    body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+    }
+    /*ENCABEZADO*/
+    .fondo-header {
+        background-color: hsl(0, 0%, 85%);
+        padding-top: 1vw;
+    }
+    /*MENÚ PRINCIPAL*/
+    #home {
+        width: 1.5vw;
+        height: 1.5vw;
+        padding-left: 4vw;
+        padding-right: 0.5vw;
+    }
+    .home {
+        display: flex;
+        border-left: black solid 0.1rem;
+        align-items: center
+    }
+    .home>a {
+        padding-left: 0;
+    }
+    nav {
+        display: flex;
+        background-color: hsl(0, 0%, 72%);
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        justify-content: center;
+    }
+    nav a {
+        border-right: black solid 0.1vw;
+        padding-right: 4vw;  /*REUTILIZADO: se aplica a todos menos al desktop*/
+        padding-left: 4vw;  /*REUTILIZADO: se aplica a todos menos al desktop*/
+    }
+    /*PIE DE PÁGINA*/
+    .footer {
+        background-color: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+        align-items: center;
+        justify-content: center;
+
+    }
+    /*títulos fondo negro y letra blanca*/
+    h2 {
+        background-color: black;
+        border-radius: 2rem;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 10vw;
+    }
 
 
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-.fondo-header {
-    background-color: hsl(0, 0%, 85%);
-    padding-top: 5vw;
-}
-#home {
-    width: 2vw;
-    height: 2vw;
-    padding-left: 4vw;
-    padding-right: 0.5vw;
-}
-.home {
-    display: flex;
-    border-left: black solid 0.1rem;
-    align-items: center
-}
-.home>a {
-    padding-left: 0;
-}
-nav {
-    display: flex;
-    background-color: hsl(0, 0%, 72%);
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    justify-content: center;
-}
-nav a {
-    border-right: black solid 0.1vw;
-    font-size: 2.5vw; /*REUTILIZADO: se aplica a todos menos al desktop*/
-    padding-right: 2vw;  /*REUTILIZADO: se aplica a todos menos al desktop*/
-    padding-left: 2vw;  /*REUTILIZADO: se aplica a todos menos al desktop*/
-}
 
+
+/*PÁGINA 1*/
+    /*reflexión*/
+    .reflexiones article, .reflexiones h1 {
+        text-align: center;
+    }
+/*PÁGINA 2*/
 
 
 
 @media screen and (min-width: 960px) {
+/*PÁGINA 1*/
+
+    /*encabezado*/
     .logo-y-titulo {
         display: flex;
         align-items: center;
         justify-content: center;
     }
     #logo {
-        width: 23rem;
+        width: 10rem;
     }
     .logo-y-titulo h1{
-        font-size: 5rem;
+        font-size: 2rem;
     }
+
+    /*menú principal*/
+    nav a {
+        font-size: 1.25vw;
+    }
+
+    /*fotografía principal*/
     .foto-presentacion img {
         max-width: 95vw;
     }
-    .introduction,article {
-        font-size: 1.5rem;
-        padding: 1rem 3rem;
-        text-align: justify;
-    }
-    article h1 {
-        visibility: hidden;
-    }
-    /*.cuadrado-gris1 p, .cuadrado-gris2 p, .cuadrado-gris3 p, .cuadrado-gris4 p, .cuadrado-gris5 p {
-        background-color: hsla(0, 0%, 72%, 0.8);
-        padding: 2rem;
-    }*/
 
-}
-
-@media (min-width: 480px) and (max-width: 960px) {
-    .logo-y-titulo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #logo {
-        width: 15rem;
-    }
-    .logo-y-titulo h1{
-        font-size: 3rem;
-    }
-    .foto-presentacion img {
-        width: 0;
-    }
+    /*descripción: articles*/
     .introduction,article {
-        font-size: 2rem;
-        padding: 1rem 3rem;
+        font-size: 1rem;
         text-align: justify;
-    }
-    article h1 {
-        visibility: hidden;
+        margin:2rem 6rem;
     }
     .cuadrado-gris1 p, .cuadrado-gris2 p, .cuadrado-gris3 p, .cuadrado-gris4 p, .cuadrado-gris5 p {
         background-color: hsla(0, 0%, 72%, 0.8);
         padding: 2rem;
     }
+    article h1 {
+        visibility: hidden;
+        width: 0;
+        position: absolute;
+
+    }
+
+    /*menú nº2*/
+    .primera-fila, .segunda-fila{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        align-items: baseline;
+        grid-column-gap: 3vw;
+        padding: 3vw;
+
+    }
+    .columna img {
+        width: 6rem;
+    }
+    .columna p {
+        color: hsl(0, 0%, 100%);
+    }
+    .menu2 {
+        background-color: hsl(0, 0%, 0%);
+        margin-right: 25vw;
+        margin-left: 25vw;
+        border-radius: 5rem;
+    }
+
+    /*reflexión*/
+    .reflexiones img {
+        width: 50rem;
+    }
+    .reflexiones {
+        margin-top: 4rem;
+    }
+
+    /*pie de página*/
+    .footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .linkedin, .gmail, .git {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 5vw;
+    }
+    .linkedin a, .gmail a, .git a {
+        margin-left: 2vw;
+    }
+
+/*PÁGINA 2*/
+    /*descripción con imagen*/
+    .descripcion-sobre-mi {
+        display: flex;
+        flex-direction: row;
+        border: solid black 0.1rem;
+    }
+    .descripcion-sobre-mi img {
+        width: 18rem;
+        background-color: black;
+        padding: 2rem;
+    }
+    .descripcion-sobre-mi p {
+        text-align: justify;
+        margin: 4rem 2rem;
+    }
+
+    /*formación*/
+    h2 {
+        padding: 3rem;
+        font-size: 3rem;
+    }
+    .formacion {
+        display: flex;
+        flex-direction: row;
+    }
+    .integracion-social {
+        display: flex;
+        flex-direction: column;
+    }
+    .integracion-social h3, .dinamizacion-actividades h3 {
+        font-weight: bold;
+    }
+    .integracion-social img {
+        width: 30rem;
+        text-align: center; /*centrar imagen...*/
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+/*PÁGINA 1*/
+
+    /*encabezado*/
+    .logo-y-titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #logo {
+        width: 10rem;
+    }
+    .logo-y-titulo h1{
+        font-size: 2rem;
+    }
+
+    /*menú principal*/
+    nav a {
+        font-size: 1.5vw;
+    }
+
+    /*imagen principal*/
+    .foto-presentacion img {
+        width: 0;
+    }
+
+    /*descripción: articles*/
+    .introduction,article {
+        font-size: 1.5rem;
+        padding: 1rem;
+        text-align: justify;
+    }
+    article h1 {
+        text-align: center;
+    }
+    .cuadrado-gris1 p, .cuadrado-gris2 p, .cuadrado-gris3 p, .cuadrado-gris4 p, .cuadrado-gris5 p {
+        background-color: hsla(0, 0%, 72%, 0.8);
+        padding: 2rem;
+    }
+
+    /*menú nº2*/
+    .primera-fila, .segunda-fila{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        align-items: baseline;
+        grid-column-gap: 3vw;
+        padding: 3vw;
+
+    }
+    .columna img {
+        width: 6rem;
+    }
+    .columna p {
+        color: hsl(0, 0%, 100%);
+    }
+    .menu2 {
+        background-color: hsl(0, 0%, 0%);
+        margin-right: 15vw;
+        margin-left: 15vw;
+        border-radius: 5rem;
+    }
+
+    /*reflexión*/
+    .reflexiones img {
+        width: 95vw;
+    }
+
+    /*pie de página*/
+    .linkedin, .gmail, .git {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .linkedin a, .gmail a, .git a {
+        font-size: 2.5vw;
+        padding-left: 2vw;
+    }
+    .linkedin img, .gmail img, .git img {
+        width: 8vw;
+    }
+
+/*PÁGINA 2*/
+    /*descripción sin imagen*/
+    .descripcion-sobre-mi {
+        background-color: black;
+    }
+    .descripcion-sobre-mi img {
+        width: 0;
+        visibility: hidden;
+    }
+    .descripcion-sobre-mi p {
+        color: white;
+        text-align: justify;
+        margin: 0 3rem 3rem 3rem;
+    }
+
+    /*títulos fondo negro letra blanca*/
+    h2 {
+        padding: 3rem;
+        font-size: 3rem;
+    }
 }
 
 @media (min-width: 0) and (max-width: 480px) {
+/*PÁGINA 1*/
+    /*encabezado*/
     .logo-y-titulo {
         display: flex;
         flex-direction: column;
@@ -158,26 +361,106 @@ nav a {
         justify-content: center;
     }
     #logo {
-        width: 15rem;
+        width: 5rem;
     }
     .logo-y-titulo h1{
-        font-size: 2.5rem;
+        font-size: 1rem;
         background-color: hsl(0, 2%, 62%, 0.4);
-        padding: 1rem;
         text-align: center;
         text-transform: uppercase;
     }
+
+    /*menñu principal*/
+    nav a {
+        font-size: 1.75vw;
+    }
+
+    /*foto principal*/
     .foto-presentacion img {
         width: 0;
     }
+
+    /*descripción: articles*/
     .introduction,article {
-        font-size: 2.3rem;
-        padding: 1rem 3rem;
+        font-size: 1rem;
         text-align: justify;
+        background-color: hsla(0, 2%, 62%, 0.41);
+        margin: 1rem 3rem;
+        padding: 1rem;
     }
     article h1 {
         background-color: hsl(0, 2%, 62%);
         padding: 1rem 2rem;
         color: hsl(0, 0%, 100%);
+        text-align: center;
+        text-transform: uppercase;
+    }+
+
+    /*menú nº2*/
+    .menu2 {
+        display: flex;
+        flex-direction: column;
     }
+    .columna {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #b7b7b7;
+        padding: 1.5rem;
+        margin: 1rem;
+        background-color: black;
+        border-radius: 10rem;
+    }
+    .columna img {
+        width: 5rem;
+        padding-right: 2rem;
+    }
+
+    /*reflexión*/
+    .reflexiones h1 {
+        text-align: center;
+    }
+    .reflexiones article {
+        background-color: white;
+    }
+    .reflexiones img {
+        width: 75vw;
+    }
+
+    /*pie de página*/
+    .linkedin, .gmail, .git {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .linkedin a, .gmail a, .git a {
+        font-size: 0.5rem;
+        padding-left: 2vw;
+    }
+    .linkedin img, .gmail img, .git img {
+        width: 2rem;
+    }
+
+/*PÁGINA 2*/
+    /*descripción sin imagen*/
+    .descripcion-sobre-mi {
+        background-color: black;
+    }
+    .descripcion-sobre-mi img {
+        width: 0;
+        visibility: hidden;
+    }
+    .descripcion-sobre-mi p {
+        color: white;
+        text-align: justify;
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    /*títulos fondo negro letra blanca*/
+    h2 { /*ARREGLAR!! DESPUES DE CRONOLOGIA*/
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
 }
