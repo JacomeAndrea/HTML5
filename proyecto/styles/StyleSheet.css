@@ -50,6 +50,9 @@
     src: url(../fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+
+
 /*TODA LA PÁGINA WEB*/
     body {
         font-family: 'Open Sans', sans-serif;
@@ -57,7 +60,7 @@
     }
     /*ENCABEZADO*/
     .fondo-header {
-        background-color: hsl(0, 0%, 85%);
+        background-color: hsla(0, 0%, 85%, 1);
         padding-top: 1vw;
     }
     /*MENÚ PRINCIPAL*/
@@ -84,9 +87,18 @@
     }
     nav a {
         border-right: black solid 0.1vw;
-        padding-right: 4vw;  /*REUTILIZADO: se aplica a todos menos al desktop*/
-        padding-left: 4vw;  /*REUTILIZADO: se aplica a todos menos al desktop*/
+        padding-right: 4vw;
+        padding-left: 4vw;
+        color: black;
+        text-decoration: none;
     }
+    a:hover, .home:hover {
+        background-color: white;
+        border-radius: 1vw;
+        transition: 1s;
+    }
+
+
     /*PIE DE PÁGINA*/
     .footer {
         background-color: hsl(0, 0%, 0%);
@@ -209,11 +221,19 @@
     .columna p {
         color: hsl(0, 0%, 100%);
     }
+    .primera-fila a, .segunda-fila a{
+        text-decoration: none;
+    }
     .menu2 {
         background-color: hsl(0, 0%, 0%);
         margin-right: 25vw;
         margin-left: 25vw;
         border-radius: 5rem;
+    }
+    .columna:hover {
+        background-color: black;
+        border-radius: 1rem;
+        border: 0.5rem solid white;
     }
 
     /*reflexión*/
