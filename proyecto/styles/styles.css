@@ -72,7 +72,7 @@
     }
     .home {
         display: flex;
-        border-left: black solid 0.1rem;
+        border-left: hsl(0, 0%, 0%) solid 0.1rem;
         align-items: center
     }
     .home>a {
@@ -80,20 +80,20 @@
     }
     nav {
         display: flex;
-        background-color: hsl(0, 0%, 72%);
+        background-color: hsla(0, 0%, 85%, 1);
         padding-top: 1vw;
         padding-bottom: 1vw;
         justify-content: center;
     }
     nav a {
-        border-right: black solid 0.1vw;
+        border-right: hsl(0, 0%, 0%) solid 0.1vw;
         padding-right: 4vw;
         padding-left: 4vw;
-        color: black;
+        color: hsl(0, 0%, 0%);
         text-decoration: none;
     }
     a:hover, .home:hover {
-        background-color: white;
+        background-color: hsl(0, 0%, 100%);
         border-radius: 1vw;
         transition: 2s;
     }
@@ -109,25 +109,23 @@
     }
     .footer a{
         text-decoration: none;
-        color: white;
+        color: hsl(0, 0%, 100%);
         text-align: center;
     }
     .footer a:hover {
-        background-color: white;
-        color: black;
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(0, 0%, 0%);
         transition: 2s;
     }
     /*títulos fondo negro y letra blanca*/
     h2 {
-        background-color: black;
+        background-color: hsl(0, 0%, 0%);
         border-radius: 2rem;
-        color: white;
+        color: hsl(0, 0%, 100%);
         text-transform: uppercase;
         text-align: center;
         margin: 5vw;
     }
-
-
 
 
 /*PÁGINA 1*/
@@ -135,12 +133,15 @@
     .reflexiones article, .reflexiones h1 {
         text-align: center;
     }
+
 /*PÁGINA 2*/
+    /*- - -*/
+
 /*PÁGINA 3*/
     /*títulos*/
     h4 {
-        background-color: black;
-        color: white;
+        background-color: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
         text-align: center;
     }
     .p-mis-intereses {
@@ -154,18 +155,24 @@
 
 /*PÁGINA 5*/
     .contenedor-gris {
-        background-color: #9f9c9c;
+        background-color: hsla(0, 0%, 85%, 1);
         border-radius: 1rem;
         align-content: center;
         display: flex;
         justify-content: center;
-        padding: 20vw 0;
+        padding: 10vw 0;
         margin: 10vw;
     }
     .contenedor-gris img {
         width: 70vw;
     }
 
+/*PÁGINA 6*/
+    /*Acerca de*/
+    .introduction-acerca-de {
+        text-align: justify;
+        margin: 2rem 4rem;
+    }
 
 
 
@@ -195,6 +202,7 @@
         max-width: 95vw;
     }
 
+
     /*descripción: articles*/
     .introduction,article {
         font-size: 1rem;
@@ -204,9 +212,8 @@
     .cuadrado-gris1 p, .cuadrado-gris2 p, .cuadrado-gris3 p, .cuadrado-gris4 p, .cuadrado-gris5 p {
         background-color: hsla(0, 0%, 72%, 0.8);
         padding: 2rem;
-        box-shadow: 1px 30px 33px rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 30px 33px hsla(0, 0%, 0%, 1);
     }
-
 
     article h1 {
         visibility: hidden;
@@ -241,9 +248,9 @@
         border-radius: 5rem;
     }
     .columna:hover {
-        background-color: black;
+        background-color: hsl(0, 0%, 0%);
         border-radius: 1rem;
-        border: 0.5rem solid white;
+        border: 0.5rem solid hsl(0, 0%, 100%);
         transition: 2s;
     }
 
@@ -283,6 +290,10 @@
         background-color: black;
         padding: 2rem;
     }
+    .descripcion-sobre-mi img:hover {
+        filter: blur(5px);
+        transition: 2s;
+    }
     .descripcion-sobre-mi p {
         text-align: justify;
         margin: 4rem 2rem;
@@ -290,8 +301,10 @@
 
     /*formación*/
     h2 {
-        padding: 3rem;
-        font-size: 3rem;
+        width: 40vw;
+        font-size: 2rem;
+        padding: 3rem 0;
+        margin: 4rem auto;
     }
     .formacion {
         display: flex;
@@ -319,12 +332,13 @@
 /*PÁGINA 3*/
     /*titulos*/
     h4 {
-        margin: 5vw 5vw;
         padding: 2rem;
         font-size: 2rem;
+        width: 40vw;
+        margin: 5vw auto;
     }
     h5 {
-        color: white;
+        color: hsl(0, 0%, 100%);
         text-align: center;
     }
     .deseos-trabajo {
@@ -335,7 +349,7 @@
     .circulo {
         width: 5rem;
         height: 5rem;
-        border-radius: 50%;
+        border-radius: 50vw;
         background: black;
         display: flex;
         justify-content: center;
@@ -350,7 +364,7 @@
         font-weight: bold;
     }
     .deseos-trabajo p {
-        background-color: #9f9c9c;
+        background-color: hsla(0, 0%, 85%, 1);
         margin: 1rem;
     }
     .empresa-y-foto {
@@ -390,25 +404,27 @@
         text-transform: uppercase;
         font-weight: bold;
         font-size: 2rem;
+        padding: 1rem;
     }
 
     .descargar-cv {
-        display: flex;
         flex-direction: column;
-        background-color: #9f9c9c;
+        background-color: hsla(0, 0%, 85%, 1);
         border-radius: 4vw;
         align-items: center;
-        margin: 4rem;
         width: 50rem;
-
+        margin: auto;
+        display: block;
     }
+
     .pdf-cv img {
-        margin: 4vw;
+        margin: auto;
+        display: block;
     }
     .flecha {
-        background-color: black;
+        background-color: hsl(0, 0%, 0%);
         border-radius: 2rem;
-        color: white;
+        color: hsl(0, 0%, 100%);
     }
 
 
@@ -482,6 +498,8 @@
     /*reflexión*/
     .reflexiones img {
         width: 95vw;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
     }
 
     /*pie de página*/
@@ -534,6 +552,7 @@
     .cronologia {
         text-align: center;
     }
+
 /*PÁGINA 3*/
     /*titulos*/
     h4 {
@@ -542,8 +561,8 @@
         font-size: 2rem;
     }
     h5 {
-        color: white;
-        background-color: black;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(0, 0%, 0%);
         text-align: center;
         font-size: 1rem;
         padding: 1rem;
@@ -551,7 +570,7 @@
         border-radius: 0.5rem;
     }
     .deseos-trabajo {
-        background-color: rgba(159, 156, 156, 0.4);
+        background-color: hsla(0, 0%, 85%, 1);
         border-radius: 1rem;
         margin: 10vw;
         padding: 1rem;
@@ -578,7 +597,7 @@
         margin: auto;
     }
     .proyecto1y2 article, .proyecto3y4 article {
-        background-color: #9f9c9c;
+        background-color: hsla(0, 0%, 85%, 1);
         padding: 1rem;
         border-radius: 2rem;
         margin: 2rem;
@@ -617,7 +636,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        background-color: #9f9c9c;
+        background-color: hsla(0, 0%, 85%, 1);
         margin: 5vw;
         border-radius: 4vw;
     }
@@ -667,7 +686,7 @@
         color: hsl(0, 0%, 100%);
         text-align: center;
         text-transform: uppercase;
-        font-size: 7vw;
+        font-size: 5vw;
     }
 
     /*menú nº2*/
@@ -679,10 +698,10 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        color: #b7b7b7;
+        color: hsla(0, 0%, 85%, 1);
         padding: 1.5rem;
         margin: 1rem;
-        background-color: black;
+        background-color: hsl(0, 0%, 0%);
         border-radius: 10rem;
     }
     .columna img {
@@ -696,9 +715,13 @@
     }
     .reflexiones article {
         background-color: white;
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
     .reflexiones img {
         width: 75vw;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
     }
 
     /*pie de página*/
@@ -719,14 +742,14 @@
 /*PÁGINA 2*/
     /*descripción sin imagen*/
     .descripcion-sobre-mi {
-        background-color: black;
+        background-color: hsl(0, 0%, 0%);
     }
     .descripcion-sobre-mi img {
         width: 0;
         visibility: hidden;
     }
     .descripcion-sobre-mi p {
-        color: white;
+        color: hsl(0, 0%, 100%);
         text-align: justify;
         margin: 0 2rem 2rem 2rem;
     }
@@ -740,6 +763,10 @@
     .integracion-social img {
         width: 0;
         visibility: hidden;
+    }
+    .integracion-social, .dinamizacion-actividades, .trabajo-social, .monitora, .TIS {
+        text-align: justify;
+        margin: 2rem 4rem;
     }
 
     .cronologia {
@@ -755,14 +782,14 @@
         padding: 1rem;
     }
     h5{
-        background-color: hsl(0, 2%, 62%);
+        background-color: hsla(0, 0%, 85%, 1);
         color: hsl(0, 0%, 100%);
         text-align: center;
         text-transform: uppercase;
         font-size: 7vw;
     }
     .deseos-trabajo {
-        background-color: rgba(159, 156, 156, 0.3);
+        background-color: hsla(0, 0%, 85%, 1);
         margin: 2rem;
     }
     .que-busco-de-empresa p {
@@ -779,6 +806,7 @@
     /*PÁGINA 4*/
     .proyecto1y2, .proyecto3y4 {
         text-align: justify;
+        margin: 3rem;
     }
     .proyecto1y2 img, .proyecto3y4 img {
         width: 0;
@@ -788,6 +816,12 @@
         padding: 1rem;
         border-radius: 2rem;
         margin: 2rem;
+    }
+    .proyecto3y4 {
+        background: linear-gradient(90deg, hsla(0, 0%, 85%, 1) 0%, hsl(0, 0%, 58%) 37%, hsl(0, 0%, 23%) 100%);
+    }
+    .proyecto1y2 {
+        background: linear-gradient(90deg, hsl(0, 0%, 23%, 1) 0%, hsl(0, 0%, 58%) 37%, hsla(0, 0%, 85%, 1) 100%);
     }
 
 /*PÁGINA 5*/
@@ -818,7 +852,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: #9f9c9c;
+        background-color: hsla(0, 0%, 85%, 1);
         margin: 10vw;
         border-radius: 4vw;
     }
@@ -828,6 +862,10 @@
     .pdf-cv img {
         margin: 4vw;
         width: 20vw;
+    }
+    .introduction-acerca-de{
+        text-align: justify;
+        margin: 2rem;
     }
 
 
