@@ -173,6 +173,19 @@
         text-align: justify;
         margin: 2rem 4rem;
     }
+    .enlaces-descarga {
+        text-align: center;
+        margin:6rem 0;
+    }
+    .enlaces-descarga a{
+        padding: 2rem 4rem;
+        background-color: hsla(0, 0%, 85%, 1);
+        border: 0.5rem solid hsl(0, 0%, 71%);
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        color: hsl(0, 0%, 0%);
+    }
 
 
 
