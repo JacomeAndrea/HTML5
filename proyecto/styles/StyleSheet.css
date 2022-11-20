@@ -102,7 +102,7 @@
         color: white;
         text-transform: uppercase;
         text-align: center;
-        margin: 10vw;
+        margin: 5vw;
     }
 
 
@@ -114,6 +114,36 @@
         text-align: center;
     }
 /*PÁGINA 2*/
+/*PÁGINA 3*/
+    /*títulos*/
+    h4 {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    .p-mis-intereses {
+        text-align: justify;
+        margin: 1rem 3rem;
+    }
+    .deseos-trabajo p {
+        text-align: justify;
+        padding: 1rem 2rem;
+    }
+
+/*PÁGINA 5*/
+    .contenedor-gris {
+        background-color: #9f9c9c;
+        border-radius: 1rem;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        padding: 20vw 0;
+        margin: 10vw;
+    }
+    .contenedor-gris img {
+        width: 70vw;
+    }
+
 
 
 
@@ -152,7 +182,10 @@
     .cuadrado-gris1 p, .cuadrado-gris2 p, .cuadrado-gris3 p, .cuadrado-gris4 p, .cuadrado-gris5 p {
         background-color: hsla(0, 0%, 72%, 0.8);
         padding: 2rem;
+        box-shadow: 1px 30px 33px rgba(0, 0, 0, 0.5);
     }
+
+
     article h1 {
         visibility: hidden;
         width: 0;
@@ -206,6 +239,7 @@
         margin-left: 2vw;
     }
 
+
 /*PÁGINA 2*/
     /*descripción con imagen*/
     .descripcion-sobre-mi {
@@ -241,8 +275,113 @@
     }
     .integracion-social img {
         width: 30rem;
-        text-align: center; /*centrar imagen...*/
+        align-self: center;
+        margin: 2rem 0;
     }
+    .cronologia {
+        text-align: center;
+    }
+    .cronologia img {
+        width: 90vw;
+    }
+
+/*PÁGINA 3*/
+    /*titulos*/
+    h4 {
+        margin: 5vw 5vw;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    h5 {
+        color: white;
+        text-align: center;
+    }
+    .deseos-trabajo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .circulo {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+    .circulo > p {
+        font-family: sans-serif;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .deseos-trabajo p {
+        background-color: #9f9c9c;
+        margin: 1rem;
+    }
+    .empresa-y-foto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .que-busco-de-empresa {
+        margin: 2rem;
+    }
+    .que-busco-de-empresa p {
+        text-align: justify;
+        margin: 2rem 4rem;
+    }
+    .que-busco-de-empresa img {
+        width: 20rem;
+        display: block;
+        margin: auto;
+    }
+
+    /*PÁGINA 4*/
+    .proyecto1y2, .proyecto3y4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .proyecto1y2 img, .proyecto3y4 img {
+        width: 30vw;
+    }
+
+    /*PÁGINA 5*/
+    .contenedor-gris{
+        padding: 2rem;
+    }
+    .rectangulo p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .descargar-cv {
+        display: flex;
+        flex-direction: column;
+        background-color: #9f9c9c;
+        border-radius: 4vw;
+        align-items: center;
+        margin: 4rem;
+        width: 50rem;
+
+    }
+    .pdf-cv img {
+        margin: 4vw;
+    }
+    .flecha {
+        background-color: black;
+        border-radius: 2rem;
+        color: white;
+    }
+
+
+
 
 }
 
@@ -273,7 +412,7 @@
     }
 
     /*descripción: articles*/
-    .introduction,article {
+    .description-home article {
         font-size: 1.5rem;
         padding: 1rem;
         text-align: justify;
@@ -333,6 +472,7 @@
     /*descripción sin imagen*/
     .descripcion-sobre-mi {
         background-color: black;
+        padding: 1rem 2rem;
     }
     .descripcion-sobre-mi img {
         width: 0;
@@ -346,8 +486,112 @@
 
     /*títulos fondo negro letra blanca*/
     h2 {
-        padding: 3rem;
-        font-size: 3rem;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    .integracion-social img {
+        width: 0;
+        visibility: hidden;
+    }
+    .integracion-social, .dinamizacion-actividades, .trabajo-social, .monitora, .TIS {
+        text-align: justify;
+        margin: 2rem 4rem;
+    }
+    .cronologia img {
+        width: 90vw;
+    }
+    .cronologia {
+        text-align: center;
+    }
+/*PÁGINA 3*/
+    /*titulos*/
+    h4 {
+        margin: 8vw 5vw;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    h5 {
+        color: white;
+        background-color: black;
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 0 10vw;
+        border-radius: 0.5rem;
+    }
+    .deseos-trabajo {
+        background-color: rgba(159, 156, 156, 0.4);
+        border-radius: 1rem;
+        margin: 10vw;
+        padding: 1rem;
+    }
+    .que-busco-de-empresa p {
+        text-align: justify;
+        margin: 2rem 4rem;
+    }
+    .que-busco-de-empresa img {
+        width: 20rem;
+        display: block;
+        margin: auto;
+    }
+
+/*PÁGINA 4*/
+    /*PÁGINA 4*/
+    .proyecto1y2, .proyecto3y4 {
+        text-align: justify;
+        margin: 2rem 4rem;
+    }
+    .proyecto1y2 img, .proyecto3y4 img {
+        width: 30vw;
+        display: block;
+        margin: auto;
+    }
+    .proyecto1y2 article, .proyecto3y4 article {
+        background-color: #9f9c9c;
+        padding: 1rem;
+        border-radius: 2rem;
+        margin: 2rem;
+    }
+
+/*PÁGINA 5*/
+
+    .flecha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rectangulo {
+        width: 40vw;
+        height: 12vw;
+        background: white;
+        margin-right: 0;
+    }
+    .rectangulo p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 4vw;
+
+
+    }
+    .triangulo {
+        width: 0;
+        height: 0;
+        border-left: 15vw solid white;
+        border-top: 12vw solid transparent;
+        border-bottom: 12vw solid transparent;
+        margin-left: 0;
+    }
+    .descargar-cv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #9f9c9c;
+        margin: 5vw;
+        border-radius: 4vw;
+    }
+    .pdf-cv img {
+        margin: 4vw;
     }
 }
 
@@ -365,12 +609,11 @@
     }
     .logo-y-titulo h1{
         font-size: 1rem;
-        background-color: hsl(0, 2%, 62%, 0.4);
         text-align: center;
         text-transform: uppercase;
     }
 
-    /*menñu principal*/
+    /*menú principal*/
     nav a {
         font-size: 1.75vw;
     }
@@ -381,7 +624,7 @@
     }
 
     /*descripción: articles*/
-    .introduction,article {
+    .introduction,.description-home article {
         font-size: 1rem;
         text-align: justify;
         background-color: hsla(0, 2%, 62%, 0.41);
@@ -390,11 +633,11 @@
     }
     article h1 {
         background-color: hsl(0, 2%, 62%);
-        padding: 1rem 2rem;
         color: hsl(0, 0%, 100%);
         text-align: center;
         text-transform: uppercase;
-    }+
+        font-size: 7vw;
+    }
 
     /*menú nº2*/
     .menu2 {
@@ -460,7 +703,103 @@
     /*títulos fondo negro letra blanca*/
     h2 { /*ARREGLAR!! DESPUES DE CRONOLOGIA*/
         padding: 1rem;
-        font-size: 2rem;
+        font-size: 1rem;
     }
+
+    .integracion-social img {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .cronologia {
+        width: 0;
+        visibility: hidden;
+        display: none;
+    }
+
+/*PÁGINA 3*/
+    /*títulos*/
+    h4 {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    h5{
+        background-color: hsl(0, 2%, 62%);
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 7vw;
+    }
+    .deseos-trabajo {
+        background-color: rgba(159, 156, 156, 0.3);
+        margin: 2rem;
+    }
+    .que-busco-de-empresa p {
+        text-align: justify;
+        margin: 2rem 4rem;
+    }
+    .que-busco-de-empresa img {
+        width: 0;
+        visibility: hidden;
+    }
+
+
+/*PÁGINA 4*/
+    /*PÁGINA 4*/
+    .proyecto1y2, .proyecto3y4 {
+        text-align: justify;
+    }
+    .proyecto1y2 img, .proyecto3y4 img {
+        width: 0;
+        visibility: hidden;
+    }
+    .proyecto1y2 article, .proyecto3y4 article {
+        padding: 1rem;
+        border-radius: 2rem;
+        margin: 2rem;
+    }
+
+/*PÁGINA 5*/
+    .flecha {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rectangulo {
+        width: 8vw;
+        height: 15vw;
+        background: white;
+        margin-top: 1rem;
+    }
+    .rectangulo p {
+        visibility: hidden;
+    }
+    .triangulo {
+        width: 0;
+        height: 0;
+        border-left: 8vw solid transparent;
+        border-top: 10vw solid white;
+        border-right: 10vw solid transparent;
+        margin-left: 0;
+    }
+    .descargar-cv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #9f9c9c;
+        margin: 10vw;
+        border-radius: 4vw;
+    }
+    .pdf-cv {
+        text-align: center;
+    }
+    .pdf-cv img {
+        margin: 4vw;
+        width: 20vw;
+    }
+
+
+
 
 }
