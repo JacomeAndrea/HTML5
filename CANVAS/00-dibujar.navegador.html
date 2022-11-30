@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Empezando con canvas</title>
+</head>
+<body>
+    <canvas id="actividad-de-canvas" width="500" height="500"></canvas>
+
+<script>
+    //guardar elemento y contexto
+    let canvas=document.getElementById("actividad-de-canvas");
+    let dimensiones=canvas.getContext("2d");
+    //coordenadas iniciales
+    let initialX;
+    let initialY;
+
+
+    function dibujar (cursorX, cursorY) {
+        dimensiones.beginPath(); //comienza en el momento que haces click
+        dimensiones.moveTo(initialX,initialY);
+        dimensiones.lineWidth=20; //grosor pincel
+        dimensiones.strokeStyle= "hsla(308,77%,68%,0.97)"; //color
+        //pincel redondeado
+        dimensiones.lineCap = "round";
+        dimensiones.lineJoin = "round";
+        dimensiones.lineTo(cursorX,cursorY); //línea desde coordenadas X e Y
+        dimensiones.stroke(); //función para dibujar el trazo
+
+        //actualizamos datos para cada click
+        initialX=cursorX;
+        initialY=cursorY;
+    }
+
+    //evento click con el mouse
+    const mouseDown = (evt) => {
+        initialX=evt.offsetX;
+        initialY=evt.offsetY;
+        //llamamos a la función dibujar
+        dibujar(initialX, initialY);
+        canvas.addEventListener("mousemove", mouseMoving);
+    };
+
+    //cuando se mueva el mouse->seguir dibujando
+    const mouseMoving = (evt) => {
+        dibujar(evt.offsetX, evt.offsetY);
+    }
+
+    //función para dejar de dibujar cuando no hagas click
+    const mouseUp = () => {
+        canvas.removeEventListener("mousemove", mouseMoving);
+    }
+
+    canvas.addEventListener("mousedown",mouseDown);
+    canvas.addEventListener("mouseup", mouseUp);
+
+</script>
+</body>
+</html>

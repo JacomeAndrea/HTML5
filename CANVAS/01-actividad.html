@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="actividad-de-canvas" width="500" height="500"></canvas>
+
+<script>
+    let canvas=document.getElementById("actividad-de-canvas");
+    let dimensiones=canvas.getContext("2d");
+    let color=dimensiones.fillStyle="hsla(308,77%,68%,0.97)"
+
+    function dibujarRectangulo (dimensiones) {
+        dimensiones.fillRect(25,25,100,100);
+        dimensiones.fillRect(25,150,300,100);
+        dimensiones.fillRect(150,25,300,100);
+        dimensiones.fillRect(350,150,100,100);
+
+    }
+
+    dibujarRectangulo(dimensiones, color);
+</script>
+</body>
+</html>
