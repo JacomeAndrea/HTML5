@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popover</title>
+  <script>
+      const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+  const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl);
+  });
+  </script>
+</head>
+<body>
+<h1>Popover</h1>
+<p>Crear un botón con un popover que se cierre al hacer click en otro lado</p>
+<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="titulo popover"
+        data-bs-content="contenido popover, puede ser mas largo que los tooltips">
+    Popover con título
+</button>
+<p>Crear un botón con un popover que aparezca arriba con título y texto</p>
+<button type="button" class="btn btn-lg btn-danger" data-bs-placement="top" data-bs-toggle="popover" data-bs-title="titulo popover"
+        data-bs-content="contenido popover, puede ser mas largo que los tooltips" >
+    Popover con título
+</button>
+</body>
+</html>

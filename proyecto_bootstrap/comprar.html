@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comprar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        h1 {
+            padding: 2rem;
+            color: white;
+            background-color: black;
+            border-radius: 1rem;
+            border: 0.5rem solid;
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+            padding: 3rem;
+        }
+
+        .d-flex {
+            margin-top: 3rem;
+        }
+
+        .traje > img {
+            height: 25rem;
+            width: auto;
+        }
+
+        .zapatos > img {
+            height: auto;
+            width: 15rem;
+            margin: 1rem;
+        }
+
+        .zapatos > div > img {
+            height: auto;
+            width: 17rem;
+        }
+
+        #hombre {
+            padding:3rem 1rem;
+        }
+
+        .row {
+            padding: 0.5rem;
+        }
+
+
+        /*MUJER*/
+        .img-thumbnail {
+            padding: 3rem 1rem;
+            width: 20rem;
+            height: auto;
+        }
+
+        /*breakpoint desde 0px hasta 1200px desparezca .titulos-hombre*/
+        @media screen and (max-width: 1200px) {
+            .titulos-hombre {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#hombre">Hombre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#mujer">Mujer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#nino">Niño/a</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="hombre" class="container-fluid">
+    <h1>HOMBRE</h1>
+    <div class="row text-center bg-dark text-light titulos-hombre">
+        <div class="col">Trajes de vestir</div>
+        <div class="col">Zapatos de vestir</div>
+    </div>
+
+
+
+    <div class="row text-center">
+        <div class="col traje">
+            <img src="img/hombre-traje1.jpg">
+        </div>
+        <div class="col traje">
+            <img src="img/hombre-traje2.jpg">
+        </div>
+        <div class="col zapatos">
+            <img src="img/hombre-zapatos1.jpg">
+            <div class="row zapatos justify-content-center">
+                <img src="img/hombre-zapatos4.jpg">
+            </div>
+        </div>
+        <div class="col zapatos">
+            <img src="img/hombre-zapatos2.jpg">
+            <div class="row zapatos justify-content-center">
+                <img src="img/hombre-zapatos3.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="mujer" class="container-fluid bg-secondary" style="padding:100px 20px;">
+    <h1>MUJER</h1>
+    <div class="card">
+        <div class="card-header border">
+
+        </div>
+        <div class="card-body border">
+            <div class="toast show bg-dark">
+                <div class="toast-header">
+                    APROVECHA LA OFERTA DEL 50% EN ROPA DE MUJER
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                    <img class="img-thumbnail" src="img/rebajas.jpg" alt="rebajas">
+                </div>
+            </div>
+            <div class="alert alert-danger">
+                <strong>¡No te lo pierdas!</strong> <span class="badge bg-danger text-light">Oferta</span> del 50% en toda la ropa de mujer solo <u>hasta el 20 de febrero del 2023.</u>
+            </div>
+            <div>
+                <h5>Puntos totales acumulados:</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-black text-light" style="width:70vw">¡357 puntos!</div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer border">
+            <h4>Otras tiendas de interés:</h4>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link bg-dark text-light" href="#">H&M</a></li>
+                <li class="page-item"><a class="page-link bg-dark text-light" href="#">C&A</a></li>
+                <li class="page-item"><a class="page-link bg-dark text-light" href="#">Pull&Bear</a></li>
+                <li class="page-item"><a class="page-link bg-dark text-light" href="#">Lefties</a></li>
+                <li class="page-item"><a class="page-link bg-dark text-light" href="#">Pimkie</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="nino" class="container-fluid bg-dark text-light" style="padding:100px 20px;">
+    <h1>NIÑO/A</h1>
+    <div class="d-flex flex-row justify-content-evenly align-items-end">
+        <img src="img/nino-a.jpg" class="rounded-circle" alt="Cinque Terre" width="304" height="304">
+        <div class="dropdown">
+            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
+                Niño/a
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" id="zapatos">Zapatos</a></li>
+                <li><a class="dropdown-item" id="abrigos">Abrigos</a></li>
+                <li><a class="dropdown-item" id="camisetas">Camisetas</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur culpa dicta dolore dolorem hic nemo
+        perferendis sed vero voluptate. Adipisci aliquam at atque consectetur, dicta dolorem eos excepturi expedita fuga
+        id impedit laboriosam, laudantium, natus nemo praesentium qui quibusdam rem repellat repellendus rerum similique
+        sit suscipit tempore temporibus ut veritatis voluptatem! Architecto distinctio ducimus facilis fuga officia
+        pariatur porro ratione similique tempora totam? Culpa minima sunt voluptatibus? Distinctio ipsa libero molestiae
+        provident sequi. A aliquam aperiam asperiores commodi cupiditate deleniti dolore dolorem esse explicabo fuga hic
+        in magni modi molestiae natus nesciunt non obcaecati, odit quibusdam quo reprehenderit rerum saepe sunt tempore
+        temporibus vel veniam voluptatum? Adipisci aperiam at consectetur, consequuntur eius enim esse illo in iure
+        labore magnam necessitatibus numquam optio perferendis quas ratione rerum suscipit ullam veritatis vitae. Ab
+        animi blanditiis deleniti et magni modi molestias nemo odit pariatur quae rem, rerum saepe tempora totam
+        veritatis. A accusantium asperiores atque blanditiis consectetur consequatur cum delectus earum ex explicabo
+        harum iure, laudantium minima mollitia, quasi quisquam reiciendis repellat repellendus repudiandae sit soluta,
+        tempore vero. A at autem, cupiditate dolorum eaque expedita facilis harum in magnam minus mollitia, nisi nostrum
+        praesentium provident quae quia quisquam quod repellat sunt ullam. Aliquam commodi dolores ea error eum harum
+        impedit laborum libero nisi nostrum numquam officia, quam quasi sequi ullam unde veniam? Aperiam cum dicta
+        dolores error iure, nesciunt qui soluta suscipit veniam voluptate? Ab aliquam, asperiores atque autem blanditiis
+        consectetur corporis deleniti dolore dolorum ducimus eius eligendi eos esse explicabo hic id illum, in
+        laboriosam laborum laudantium magni molestiae nam natus nisi placeat praesentium provident quam qui quia quod
+        reiciendis soluta temporibus totam vel velit veritatis voluptatum. Atque aut nulla quod rem vitae. Accusantium
+        esse fugit illo magnam nemo, odit quisquam tempora velit. Accusantium ad aliquid at, aut beatae commodi
+        consequuntur delectus dignissimos dolorem dolorum, esse exercitationem fugit id in inventore iste maxime
+        molestias nulla possimus provident quas repellat sit voluptates. Asperiores esse hic impedit ipsa
+        necessitatibus. Aperiam corporis, culpa cupiditate debitis, distinctio dolores explicabo labore libero maiores
+        nulla odit officia porro possimus qui ratione rem repellendus repudiandae tempore! Autem corporis doloribus
+        ducimus, eligendi, error, est excepturi in labore modi molestiae nesciunt odit optio porro quae repellendus
+        reprehenderit similique! Ad cum officia soluta? Aliquid asperiores delectus fuga nam quaerat quidem saepe sunt
+        tempore! Error illo maiores ratione sapiente sint, ut! Autem dolor facilis magnam quaerat quis similique
+        voluptatem. Alias fuga, illo itaque nisi obcaecati possimus quaerat repellat sequi, similique sint soluta
+        voluptate? Accusamus alias aliquid asperiores atque beatae commodi consequuntur cupiditate delectus doloremque
+        eos, est facere facilis incidunt, ipsam iste iusto magni maiores nam necessitatibus nesciunt nobis nostrum
+        numquam odit officiis perferendis quasi quibusdam quidem quisquam ratione recusandae repellendus sed sunt, unde.
+        Aliquam aspernatur consequuntur corporis doloribus ducimus est eum ex fuga, labore libero magni molestiae,
+        nostrum, officia quam suscipit velit voluptatem. Et exercitationem facere magnam officia optio reprehenderit
+        vero voluptatem? Dolores eligendi excepturi laborum minus veniam? Ad atque, aut ea eveniet nam numquam
+        perspiciatis saepe. Beatae eum harum numquam ullam?</p>
+</div>
+<script>
+    //si pulsas en el id zapatos, cambia la imagen
+    document.getElementById("zapatos").addEventListener("click", function () {
+        //widht auto
+        document.querySelector("img").style.width = "auto";
+        //quitamos la class rounded-circle
+        document.querySelector("img").classList.remove("rounded-circle");
+        //cambiamos el src de la imagen
+        document.querySelector("img").src = "img/nino-zapatos.jpg";
+    });
+    document.getElementById("abrigos").addEventListener("click", function () {
+        document.querySelector("img").style.width = "auto";
+        document.querySelector("img").classList.remove("rounded-circle");
+        document.querySelector("img").src = "img/nino-abrigo.jpg";
+    });
+    document.getElementById("camisetas").addEventListener("click", function () {
+        document.querySelector("img").style.width = "auto";
+        document.querySelector("img").classList.remove("rounded-circle");
+        document.querySelector("img").src = "img/nino-camiseta.jpg";
+    });
+
+</script>
+</body>
+</html>

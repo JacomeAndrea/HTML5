@@ -102,6 +102,7 @@
 
 
 
+
     </style>
 </head>
 <body>
@@ -143,6 +144,25 @@
           </div>
         </div>
       </nav>
+
+    <!--MODAL AUTOMÁTICO-->
+    <div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close d-flex justify-content-start" data-dismiss="modal" aria-hidden="true"></button>
+                <div class="d-flex justify-content-center modal-header  bg-dark text-light">
+                    <h3>Bienvenido/a</h3>
+                </div>
+                <div class="modal-body text-center">
+                    <h4>¿Quieres iniciar sesión?</h4>
+                </div>
+                <div class="modal-footer">
+                    <a href="login.html" data-dismiss="modal" class="btn btn-dark">Pulse aquí</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="container">
         <div class="fondo-negro-carousel bg-dark">
@@ -269,8 +289,24 @@
         </footer>
 
 
-
     <script>
+
+        //código javascript que muestre el modal al cargar la página
+        window.onload = function () {
+            const modal = document.getElementById("mostrarmodal");
+            modal.classList.add("show");
+            modal.setAttribute("aria-hidden", "false");
+            modal.style.display = "block";
+        };
+        //¡necesario para que el modal se muestre al cargar la página de forma automática!
+        //si pulsas el botón de cerrar, se cierra el modal
+        document.getElementsByClassName("btn-close")[0].addEventListener("click", function () {
+            const modal = document.getElementById("mostrarmodal");
+            modal.classList.remove("show");
+            modal.setAttribute("aria-hidden", "true");
+            modal.style.display = "none";
+        });
+
         //CAROUSEL: dinámico
         let stop = false;
 
@@ -293,12 +329,6 @@
 
         setTimeout(slideNext, 5000); // Establece un tiempo de espera de 5 segundos antes de iniciar la primera transición
 
-        //BOTON FOOTER: siquiente
-        const btnSiguiente = document.getElementsByName("siguientePagina");
-
-        btnSiguiente[0].addEventListener("click", () => {
-            window.location.href = "comprar.html";
-        });
 
 
 

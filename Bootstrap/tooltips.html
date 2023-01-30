@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tooltips and popover</title>
+    <script>
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Too4ltip(tooltipTriggerEl);
+        });
+    </script>
+</head>
+
+<body>
+<h1>Tooltips</h1>
+<p>Crear un link con un tooltip</p>
+<a href="#" data-bs-toggle="tooltip" title="Tooltip">Link</a>
+
+<p>Crear un botón con un tooltip al lado derecho</p>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+        data-bs-placement="right" Title="Tooltip derecho">
+  Tooltip derecho
+</button>
+
+</body>
+</html>
