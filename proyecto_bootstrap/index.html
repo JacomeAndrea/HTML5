@@ -40,6 +40,8 @@
              }
          }
 
+
+
         /*CARDS*/
 
         .cards-para-comprar {
@@ -84,6 +86,22 @@
             }
         }
 
+        /*JUMBOTRÓN*/
+        h2 {
+            background-color: black;
+            color: white;
+            border-radius: 1rem;
+            margin-top: 1rem;
+            padding: 2rem;
+        }
+
+        /*FOOTER*/
+        footer {
+            padding: 1rem;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -99,16 +117,16 @@
           <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="javascript:void(0)">Home</a>
+                <a class="nav-link active" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Conócenos</a>
+                <a class="nav-link" href="comprar.html">Comprar</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Crear cuenta</a>
+                <a class="nav-link" href="crear-cuenta.html">Crear cuenta</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Acerca de</a>
+                <a class="nav-link" href="acerca-de.html">Acerca de</a>
               </li>
             </ul>
               <div class="d-flex">
@@ -165,17 +183,6 @@
                     <img src="img/carousel7.jpg" alt="Image 7">
                 </div>
             </div>
-
-
-            <!-- Controls -->
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
         </div>
         </div>
         <div class="cards-para-comprar">
@@ -244,7 +251,24 @@
                 </div>
             </div>
         </div>
-</div>
+        <br><br>
+        <div class="container mt-3 text-center">
+            <h2>EJEMPLO DE JUMBOTRON</h2>
+            <div class="mt-4 p-5 bg-secondary text-white rounded">
+                <h1>Título</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+            </div>
+        </div>
+        <br><br>
+        <!--seguir poniendo elementos de bootstrap-->
+
+    </div>
+        <footer class="container d-flex justify-content-between bg-secondary">
+            <button type="button" name="anteriorPagina" class="btn btn-outline-light text-dark" data-bs-toggle="tooltip" title="No existe página anterior">🢀 Anterior</button>
+            <button type="button" name="siguientePagina" class="btn btn-outline-light text-dark" data-bs-toggle="tooltip" title="Comprar">Siguiente 🢂</button>
+        </footer>
+
+
 
     <script>
         //CAROUSEL: dinámico
@@ -268,6 +292,14 @@
         }
 
         setTimeout(slideNext, 5000); // Establece un tiempo de espera de 5 segundos antes de iniciar la primera transición
+
+        //BOTON FOOTER: siquiente
+        const btnSiguiente = document.getElementsByName("siguientePagina");
+
+        btnSiguiente[0].addEventListener("click", () => {
+            window.location.href = "comprar.html";
+        });
+
 
 
 
