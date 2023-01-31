@@ -10,28 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
 
-        /*NAVBAR*/
-        .navbar {
-            border: 1px solid white;
-        }
 
-
-
-        h1 {
-            border-radius: 1rem;
-            border: 0.5rem solid;
-        }
-
-
-        p {
-            text-align: justify;
-            padding: 3rem;
-        }
-
-        .d-flex {
-            margin-top: 3rem;
-        }
-
+        /*El tamaño de la imagen es demasiado grande para utilizar bootstrap (h-25)*/
         .traje > img {
             height: 25rem;
             width: auto;
@@ -48,21 +28,6 @@
             width: 17rem;
         }
 
-        #hombre {
-            padding:3rem 1rem;
-        }
-
-        .row {
-            padding: 0.5rem;
-        }
-
-
-        /*MUJER*/
-        .img-thumbnail {
-            padding: 3rem 1rem;
-            width: 20rem;
-            height: auto;
-        }
 
         /*breakpoint desde 0px hasta 1200px desparezca .titulos-hombre*/
         @media screen and (max-width: 1200px) {
@@ -75,7 +40,7 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top border border-light">
     <div class="container-fluid">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -92,9 +57,10 @@
 </nav>
 
 
-<div id="hombre" class="container-fluid">
-    <h1 class="p-3 text-light bg-dark text-center">HOMBRE</h1>
-    <div class="row text-center bg-dark text-light titulos-hombre">
+<br><br><br>
+<div id="hombre" class="container-fluid p-2">
+    <h1 class="p-3 text-light bg-dark text-center rounded-pill">HOMBRE</h1>
+    <div class="row text-center bg-dark text-light titulos-hombre mb-3">
         <div class="col">Trajes de vestir</div>
         <div class="col">Zapatos de vestir</div>
     </div>
@@ -123,8 +89,8 @@
     </div>
 </div>
 
-<div id="mujer" class="container-fluid bg-secondary" style="padding:100px 20px;">
-    <h1>MUJER</h1>
+<div id="mujer" class="container-fluid bg-secondary px-3 py-4">
+    <h1 class="p-3 text-light bg-dark text-center rounded-pill mb-3">MUJER</h1>
     <div class="card">
         <div class="card-header border">
 
@@ -136,7 +102,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
                 </div>
                 <div class="toast-body">
-                    <img class="img-thumbnail" src="img/rebajas.jpg" alt="rebajas">
+                    <img class="img-thumbnail p-2 w-100" src="img/rebajas.jpg" alt="rebajas">
                 </div>
             </div>
             <div class="alert alert-danger">
@@ -163,13 +129,11 @@
 </div>
 
 <div id="nino" class="container-fluid bg-dark text-light" style="padding:100px 20px;">
-    <h1>NIÑO/A</h1>
-    <div class="d-flex flex-row justify-content-evenly align-items-end">
-        <img src="img/nino-a.jpg" class="rounded-circle w-25" alt="Cinque Terre">
+    <h1 class="p-3 text-light bg-secondary text-center rounded-pill">NIÑO/A</h1>
+    <div class="d-flex flex-row justify-content-evenly align-items-end mt-3">
+        <img id="img-dinamica" src="img/nino-a.jpg" class="rounded-circle w-25 h-auto" alt="Ropa niño/a">
         <div class="dropdown">
-            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
-                Niño/a
-            </button>
+            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Opciones</button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" id="zapatos">Zapatos</a></li>
                 <li><a class="dropdown-item" id="abrigos">Abrigos</a></li>
@@ -178,65 +142,38 @@
         </div>
     </div>
     <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur culpa dicta dolore dolorem hic nemo
-        perferendis sed vero voluptate. Adipisci aliquam at atque consectetur, dicta dolorem eos excepturi expedita fuga
-        id impedit laboriosam, laudantium, natus nemo praesentium qui quibusdam rem repellat repellendus rerum similique
-        sit suscipit tempore temporibus ut veritatis voluptatem! Architecto distinctio ducimus facilis fuga officia
-        pariatur porro ratione similique tempora totam? Culpa minima sunt voluptatibus? Distinctio ipsa libero molestiae
-        provident sequi. A aliquam aperiam asperiores commodi cupiditate deleniti dolore dolorem esse explicabo fuga hic
-        in magni modi molestiae natus nesciunt non obcaecati, odit quibusdam quo reprehenderit rerum saepe sunt tempore
-        temporibus vel veniam voluptatum? Adipisci aperiam at consectetur, consequuntur eius enim esse illo in iure
-        labore magnam necessitatibus numquam optio perferendis quas ratione rerum suscipit ullam veritatis vitae. Ab
-        animi blanditiis deleniti et magni modi molestias nemo odit pariatur quae rem, rerum saepe tempora totam
-        veritatis. A accusantium asperiores atque blanditiis consectetur consequatur cum delectus earum ex explicabo
-        harum iure, laudantium minima mollitia, quasi quisquam reiciendis repellat repellendus repudiandae sit soluta,
-        tempore vero. A at autem, cupiditate dolorum eaque expedita facilis harum in magnam minus mollitia, nisi nostrum
-        praesentium provident quae quia quisquam quod repellat sunt ullam. Aliquam commodi dolores ea error eum harum
-        impedit laborum libero nisi nostrum numquam officia, quam quasi sequi ullam unde veniam? Aperiam cum dicta
-        dolores error iure, nesciunt qui soluta suscipit veniam voluptate? Ab aliquam, asperiores atque autem blanditiis
-        consectetur corporis deleniti dolore dolorum ducimus eius eligendi eos esse explicabo hic id illum, in
-        laboriosam laborum laudantium magni molestiae nam natus nisi placeat praesentium provident quam qui quia quod
-        reiciendis soluta temporibus totam vel velit veritatis voluptatum. Atque aut nulla quod rem vitae. Accusantium
-        esse fugit illo magnam nemo, odit quisquam tempora velit. Accusantium ad aliquid at, aut beatae commodi
-        consequuntur delectus dignissimos dolorem dolorum, esse exercitationem fugit id in inventore iste maxime
-        molestias nulla possimus provident quas repellat sit voluptates. Asperiores esse hic impedit ipsa
-        necessitatibus. Aperiam corporis, culpa cupiditate debitis, distinctio dolores explicabo labore libero maiores
-        nulla odit officia porro possimus qui ratione rem repellendus repudiandae tempore! Autem corporis doloribus
-        ducimus, eligendi, error, est excepturi in labore modi molestiae nesciunt odit optio porro quae repellendus
-        reprehenderit similique! Ad cum officia soluta? Aliquid asperiores delectus fuga nam quaerat quidem saepe sunt
-        tempore! Error illo maiores ratione sapiente sint, ut! Autem dolor facilis magnam quaerat quis similique
-        voluptatem. Alias fuga, illo itaque nisi obcaecati possimus quaerat repellat sequi, similique sint soluta
-        voluptate? Accusamus alias aliquid asperiores atque beatae commodi consequuntur cupiditate delectus doloremque
-        eos, est facere facilis incidunt, ipsam iste iusto magni maiores nam necessitatibus nesciunt nobis nostrum
-        numquam odit officiis perferendis quasi quibusdam quidem quisquam ratione recusandae repellendus sed sunt, unde.
-        Aliquam aspernatur consequuntur corporis doloribus ducimus est eum ex fuga, labore libero magni molestiae,
-        nostrum, officia quam suscipit velit voluptatem. Et exercitationem facere magnam officia optio reprehenderit
-        vero voluptatem? Dolores eligendi excepturi laborum minus veniam? Ad atque, aut ea eveniet nam numquam
-        perspiciatis saepe. Beatae eum harum numquam ullam?</p>
+
+    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias delectus doloremque fugiat, officia perspiciatis reprehenderit voluptatum! Atque debitis dignissimos eaque eligendi error magni optio quibusdam? Ad aliquam aspernatur assumenda at culpa debitis deleniti dignissimos distinctio dolor dolorem dolorum eaque eligendi eos harum illum impedit iure laborum laudantium magni molestias nam nihil odio porro quibusdam quidem quis quo quos reprehenderit repudiandae sed similique, velit voluptatibus voluptatum! Corporis cupiditate, dolor dolores eaque eligendi ex ipsa iure laudantium minus necessitatibus nesciunt odio officiis quis quisquam quos reiciendis vel veritatis vitae voluptate, voluptatem. Accusamus, adipisci assumenda dolorum ea eaque eos magnam molestiae nam natus nisi numquam officia quae quis rerum sequi similique suscipit totam? Consequatur consequuntur eius inventore molestiae nulla quisquam vitae voluptatum? Dolorum illo iste nam omnis quibusdam saepe sed, vero! Aperiam atque culpa delectus distinctio enim excepturi facilis fugiat hic, illum inventore ipsam ipsum laborum mollitia non, officiis, omnis pariatur perferendis porro praesentium quas qui quibusdam quisquam suscipit tempore unde vitae voluptate. Ab accusamus accusantium amet beatae deleniti dolorem doloremque ea error esse est ex facere facilis fuga illo ipsum libero minima minus molestiae necessitatibus nisi non nostrum officiis optio porro quam quas quidem quo repellat sint, soluta tenetur velit voluptas voluptates. Aperiam deleniti deserunt dignissimos, doloribus eos et eveniet ex exercitationem harum iure iusto, magni necessitatibus obcaecati optio pariatur possimus quaerat quasi quisquam quos similique suscipit temporibus ut vel voluptas voluptatum. Animi atque blanditiis cumque distinctio dolor dolore dolores esse exercitationem fugit illo, illum incidunt inventore iure iusto molestiae neque nihil nulla odio optio pariatur quaerat sequi unde! Deserunt harum labore qui. Amet dignissimos distinctio dolore eligendi facere fuga iste iusto labore mollitia obcaecati quaerat quis reiciendis soluta, ut vero? Accusamus consectetur consequuntur dolorem dolores explicabo, incidunt nemo quas quia sapiente. Asperiores beatae deserunt harum non. Ab beatae odio perferendis.</p>
 </div>
 <footer class="bg-secondary d-flex justify-content-between py-3">
-    <button type="button" name="anteriorPagina" class="btn btn-outline-light text-dark" data-toggle="tooltip" title="No existe página anterior">
+    <button type="button" name="anteriorPagina" class="btn btn-outline-light text-dark" data-toggle="tooltip" title="Home">
         🢀 Anterior
     </button>
-    <button type="button" name="siguientePagina" class="btn btn-outline-light text-dark" data-toggle="tooltip" title="Comprar">
+    <button type="button" name="siguientePagina" class="btn btn-outline-light text-dark" data-toggle="tooltip" title="Crear cuenta">
         Siguiente 🢂
     </button>
 </footer>
 <script>
-    //si pulsas en el id zapatos, cambia la imagen
+    //CAMBIO DE IMAGENES EN DROPDOWN
     document.getElementById("zapatos").addEventListener("click", function () {
-        //quitamos la class rounded-circle
-        document.querySelector("img").classList.remove("rounded-circle");
-        //cambiamos el src de la imagen
-        document.querySelector("img").src = "img/nino-zapatos.jpg";
+        document.getElementById("img-dinamica").src = "img/nino-zapatos.jpg";
     });
     document.getElementById("abrigos").addEventListener("click", function () {
-        document.querySelector("img").classList.remove("rounded-circle");
-        document.querySelector("img").src = "img/nino-abrigo.jpg";
+        document.getElementById("img-dinamica").src = "img/nino-abrigo.jpg";
     });
     document.getElementById("camisetas").addEventListener("click", function () {
-        document.querySelector("img").classList.remove("rounded-circle");
-        document.querySelector("img").src = "img/nino-camiseta.jpg";
+        document.getElementById("img-dinamica").src = "img/nino-camiseta.jpg";
+    });
+
+
+    //BOTONES DE SIGUIENTE Y ANTERIOR
+    //botón siguiente
+    document.getElementsByName("siguientePagina")[0].addEventListener("click", function () {
+        window.location.href = "crear-cuenta.html";
+    });
+    //botón anterior
+    document.getElementsByName("anteriorPagina")[0].addEventListener("click", function () {
+        window.location.href = "index.html";
     });
 
 </script>
