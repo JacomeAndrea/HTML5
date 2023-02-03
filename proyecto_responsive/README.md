@@ -10,4 +10,4 @@ Para la realización de esta página web, en primer lugar se ha desarrollado un 
   - Mi C.V.
   - Acerca de
 
-**Objetivo:`#0d1117`** Dar a conoceme fundamentalmente en el ámbito profesional
+**Objetivo:** Dar a conoceme fundamentalmente en el ámbito profesional
