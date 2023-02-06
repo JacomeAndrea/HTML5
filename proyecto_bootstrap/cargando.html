@@ -15,16 +15,11 @@
         <div class="spinner-border text-secondary mt-2">
             <span class="visually-hidden mt-3">Loading...</span>
         </div>
-        <h3></h3><!--empty para imprimir la cuenta atrás con el script de JavaScript-->
     </div>
 <script>
     let tiempo=3;
-    let cuentaAtras = document.getElementsByTagName("h3");
-    cuentaAtras.value=tiempo;
     let intervalo = setInterval(function(){
         tiempo--;
-        cuentaAtras.value=tiempo;
-        cuentaAtras.innerHTML=tiempo;
         if(tiempo===0){
             clearInterval(intervalo);
             window.location.href="index.html";
