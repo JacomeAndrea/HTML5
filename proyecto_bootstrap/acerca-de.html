@@ -46,7 +46,41 @@
         </div>
     </div>
 </nav>
-
+<!--En el Acerca De se llevará a una página en la que el alumno explicará su diseño así como la accesibilidad
+conseguida y cómo ha hecho su diseño amigable. En esta página se pondrá el icono de la accesibilidad conseguida
+y otros iconos de validación si hubiese aprobado dichos procesos (HTML, CSS).-->
+<div class="container">
+    <h1 class="text-center p-3 mt-3 bg-dark text-light">ACCESIBILIDAD</h1>
+    <section>
+        <h3 class="text-center bg-secondary text-light p-3 my-3">¿Esta página web es accesible?</h3>
+        <p>Efectivamente, esta página web es accesible puesto que está diseñada y codificada de forma que su contenido y servicios están disponibles para cualquier persona, independientemente de las discapacidades o limitaciones tales como el idioma, la experiencia, conocimiento... que pueda presentar el usuario.</p>
+    </section>
+    <section>
+        <h3 class="text-center p-3 my-3">¿Por qué es accesible?</h3>
+        <ul>
+            <li>Es responsive: puede visualizarse el contenido tanto para pc, como para móvil y tablet. Esto permite que el usuario tenga mayor libertad en cuanto al contexto de navegación.</li>
+            <li>Sigue un orden lógico: cuenta con un menú de navegación en la parte superior de la página y con un pequeño menú en el footer (al fianl de la página) donde puedes avanzar a la siguiente página o recular a la anterior.</li>
+            <li>EL menú te muestra en la página que estás situada señalando con un color más fuerte el nombre de la página en la que te encuentras.</li>
+            <li>Es perceptible: Todas las imágenes cuentan con un atributo "alt" que describe la propia imagen en caso de no poder visualizarla, o bien, en el caso de personas con discapacidad visual es una forma de poder conocer el contenido de la imagen.</li>
+            <li>Es operable: el menú de navegación cuenta con un buscador que puede facilitar al usuario la localización del contenido una vez se habilite. Además de que el usuario cuenta con tiempo ilimitado para poder leer y/o acceder al contencido (a excepción de la página de loading que sencillamente se ha utilizado con la finalidad de utilizar spinner de BootStrap.</li>
+            <li>Es comprensible: el texto es legible, se presenta el contenido de forma predecible (en el apartado de iniciar sesión aparecen los campos necesarios para que el usuario pueda  iniciar sesión, al igual que en crear cuenta; asimismo en el apartado "comprar" se muestra según la clasificación social mujer, hombre o niño/a, ropa perteneciente a dicho colectivo.</li>
+        </ul>
+    </section>
+    <section>
+        <h3 class="text-center bg-secondary text-light p-3 my-3">¿Cómo se ha realizado el diseño amigable?</h3>
+        <p>Cuenta con colores armoniosos. Sus colores principales son el blanco, el negro y el gris, de esta forma la página web es más agradable a la vista: permite visualizar sin dificultades las letras. Del mismo modo, la distribución del contenido sigue un orden lógico: centrándonos en la página principal (index.html) nos encontramos las imágenes centradas, ocupando más o menos el mismo espacio y siguiendo la misma estructura para facilitar la compra.</p>
+        <p>Cuenta con información clara y sencilla, además de un código limpio que permite una mayor accesibilidad a la hora de tener que modificar o actualizar algo de la página web. Del mismo modo, todo el código ha sido pasado con anterioridad por un validador de HTML lo cual dificulta la apariencia de errores.</p>
+        <p>Por último, resaltar que gracias a la distribución del contenido en diferentes páginas de HTML, al contar con poco contenido la velocidad de carga es mayor.</p>
+    </section>
+    <section>
+        <h3 class="text-center p-3 my-3">Icono de accesibilidad conseguida</h3>
+        <img class="mx-auto d-block w-auto" src="img/accesibilidad-icono.png" alt="accesibilidad triple a">
+    </section>
+    <section>
+        <h3 class="text-center bg-secondary text-light p-3 my-3">Icono de validación</h3>
+        <img class="mx-auto d-block w-25" src="img/validacion-icono.png">
+    </section>
+</div>
 <footer class="bg-secondary d-flex justify-content-between py-3 mt-3">
     <button type="button" name="anteriorPagina" class="btn btn-outline-light text-dark" data-toggle="tooltip" title="Crear cuenta">
         🢀 Anterior
@@ -55,6 +89,7 @@
         Siguiente 🢂
     </button>
 </footer>
+
 <script>
     //BOTONES DE SIGUIENTE Y ANTERIOR
     //botón anterior
